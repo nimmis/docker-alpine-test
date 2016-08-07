@@ -7,6 +7,7 @@ COPY root/. /
 RUN echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk update && apk upgrade && \
     apk add ca-certificates rsyslog logrotate runit@testing && \
+    mkdir /etc/run_always && mkdir /etc/run_once && \
     # Install utils and init process
     /install/docker-utils/install.sh && \
     # Install backup support
