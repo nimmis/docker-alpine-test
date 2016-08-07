@@ -1,0 +1,6 @@
+[submodule "root/install/backup"]
+	path = root/install/backup
+	url = https://github.com/nimmis/backup.git
+[submodule "root/install/docker-utils"]
+	path = root/install/docker-utils
+	url = https://github.com/nimmis/docker-utils.git
